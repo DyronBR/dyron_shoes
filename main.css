@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif; 
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 12px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 12px;
+    background-color: #2b85f3;
+    color: #ecf0f1;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header nav li a {
+    color:  #ecf0f1;
+    text-decoration: none;
+}
+
+.loja {
+    display: grid;
+    grid-template-columns: 50% 48%;
+    margin-bottom: 56px;
+    column-gap: 2%;
+    row-gap: 5%;
+}
+
+.loja img {
+    max-width: 100%;
+    margin-right: 8px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    column-gap: 1.3%;
+    row-gap: 5%;
+}
+
+.produtos img {
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.produtos li {
+    display: inline;
+}
+
+section {
+    padding: 24px 0;
+    color:  #000000;
+    padding: 12px;
+
+}
+
+section h2 {
+    margin-bottom: 16px;
+    border-bottom: 2px solid #2b85f3;
+    color: #2b85f3;
+}
+
+section p {
+    margin-bottom: 8px;
+    text-align: justify;
+}
+
+.produtos p {
+    padding: 12px 0;
+}
+
+button {
+    background-color:   #2b85f3;
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    padding: 5px 59px;
+}
+
+button:hover {
+    background-color:  #078ca0;
+}
+
+footer {
+    background-color:  #2b85f3;
+    color: #ecf0f1;
+    padding: 16px 0;
+    margin-top: 60px;
+}
+
+@media screen and (max-width: 640px) {
+    .loja {
+        display: block;
+    }
+    
+    .produtos {
+        display: block;
+    }
+    
+    button {
+        background-color:   #2b85f3;
+        color: #ecf0f1;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .produtos img {
+        margin-top:30px;
+    }
+}
+
+@media screen  and (min-width: 641px) and (max-width: 1023px) {
+    .loja {
+        display: block;
+    }
+    
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        column-gap: 2%;
+        row-gap: 5%;
+    }
+    
+    button {
+        background-color:   #2b85f3;
+        color: #ecf0f1;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .produtos img {
+        margin-top:30px;
+    }
+    
+}
